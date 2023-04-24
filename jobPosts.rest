@@ -1,0 +1,25 @@
+### CREATE A JOBPOST
+POST http://localhost:3000/jobposts
+Content-Type: application/json
+
+{
+    "jobTitle": "Test Job",
+    "jobDescription": "Test Job"
+}
+### GET ALL JOB POSTS
+GET http://localhost:3000/jobposts
+
+### GET A JOB POST BY ID
+GET http://localhost:3000/jobposts/64463584bb3cfb96b2105cd6
+
+### UPDATE A JOBPOST BY ID
+PATCH http://localhost:3000/jobposts/64463584bb3cfb96b2105cd6
+Content-Type: application/json
+
+{
+    "jobTitle": "New test Job",
+    "jobDescription": "Test Job"
+}
+
+### DELETE A JOB POST BY ID
+DELETE  http://localhost:3000/jobposts/64463584bb3cfb96b2105cd6
